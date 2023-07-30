@@ -1,0 +1,48 @@
+.aboutus-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutus-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 10px;
+}
+
+.aboutus-box.aboutus {
+  background-color: rgb(255, 253, 247);
+}
+
+.aboutus-seperator {
+  width: 200px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--primaryColor);
+}
+
+.aboutus-header {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.aboutus-aboutus-text-box {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  text-align: center;
+  gap: 10px;
+}
+
+.aboutus-aboutus-text {
+  font-size: 16px;
+  color: var(--secondaryColor);
+}
+
+.aboutus-box.vision {
+  background-color: rgb(179, 177, 173);
+}
