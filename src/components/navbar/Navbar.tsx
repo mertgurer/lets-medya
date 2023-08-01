@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/navbar.css";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from "../../assets/image/logo.jpg";
 import NavbarNavigationButton from "./NavbarNavigationButton";
 
 export const Navbar = () => {
-  const naviagte = useNavigate();
   const [hoveredButton, setHoveredButton] = useState<number>(-1);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -29,9 +28,9 @@ export const Navbar = () => {
 
   return (
     <div className={`navbar-container ${isScrolled ? "scrolled" : ""}`}>
-      <button className="navbar-logo-button" onClick={() => naviagte("/")}>
+      <Link className="navbar-logo-button" to={"/"}>
         <img className="navbar-logo" src={logo} alt="" />
-      </button>
+      </Link>
       <div className="navbar-navigation">
         <NavbarNavigationButton
           index={0}

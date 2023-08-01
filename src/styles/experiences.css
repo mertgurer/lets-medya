@@ -1,0 +1,42 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  gap: 10px;
+  position: relative;
+  background-color: rgb(255, 253, 247);
+}
+
+.experience-company-zone {
+  margin-top: 40px;
+  width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.experience-company-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 50%;
+  z-index: 1;
+
+  background-image: url("../assets/image/gradient.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.experience-company-box-image {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}

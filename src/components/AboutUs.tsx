@@ -45,7 +45,7 @@ export const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="aboutus-box aboutus">
+      <div className="aboutus-box mission">
         <p className="aboutus-header">Misyonumuz</p>
         <div className="aboutus-seperator" />
         <div className="aboutus-aboutus-text-box">

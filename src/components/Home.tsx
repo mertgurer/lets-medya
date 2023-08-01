@@ -11,7 +11,7 @@ export const Home = () => {
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      parallaxItem.style.transform = `translateY(-${scrollPosition * 0.37}px)`;
+      parallaxItem.style.transform = `translateY(-${scrollPosition * 0.3}px)`;
     };
 
     window.addEventListener("scroll", handleScroll);
