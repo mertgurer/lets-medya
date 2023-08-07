@@ -1,7 +1,7 @@
 .footer-container {
-  background-color: #121212;
+  background-color: var(--primaryColor);
   width: 100vw;
-  height: 140px;
+  height: 135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +41,7 @@
 }
 
 .footer-text {
-  color: var(--secondaryColor);
+  color: white;
   font-size: 16px;
 }
 
@@ -50,7 +50,7 @@
   width: 44px;
   height: 44px;
   padding-left: -100px;
-  background-color: var(--secondaryColor);
+  background-color: white;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   display: flex;
@@ -64,21 +64,4 @@
 
 .social-link-button:hover {
   color: var(--primaryColor);
-}
-
-.social-link-button::before {
-  content: "";
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  z-index: -1;
-  background-color: white;
-  transform: scaleY(0);
-  transform-origin: bottom;
-  transition: 0.3s ease-in-out;
-  overflow: hidden;
-}
-
-.social-link-button:hover::before {
-  transform: scaleY(1);
 }

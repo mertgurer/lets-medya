@@ -12,7 +12,7 @@ import dijital from "../../assets/image/services/dijital.jpg";
 export const Services = () => {
   return (
     <section className="services-container" id="services">
-      <p className="aboutus-header">Hizmetlerimiz</p>
+      <p className="aboutus-header">Hizmet Alanlarımız</p>
       <div className="aboutus-seperator" />
       <div className="services-grid">
         <ServiceBox
