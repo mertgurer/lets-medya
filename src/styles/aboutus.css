@@ -1,5 +1,5 @@
 .aboutus-container {
-  background-color: white;
+  background-color: rgb(226, 229, 218);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,11 +12,6 @@
   align-items: center;
   padding: 40px;
   gap: 10px;
-}
-
-.aboutus-box.aboutus {
-  border-top: 1px solid black;
-  background-color: rgb(255, 253, 247);
 }
 
 .aboutus-seperator {
@@ -44,11 +39,6 @@
   color: var(--secondaryColor);
 }
 
-.aboutus-box.vision {
-  background-color: rgb(255, 253, 247);
-}
-
 .aboutus-box.mission {
-  background-color: rgb(255, 253, 247);
   border-bottom: 1px solid black;
 }

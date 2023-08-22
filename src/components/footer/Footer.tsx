@@ -4,7 +4,6 @@ import "../../styles/footer.css";
 import { MdLocationPin, MdPhone, MdEmail } from "react-icons/md";
 import {
   FaLinkedinIn,
-  FaTwitter,
   FaInstagram,
   FaFacebookF,
   FaYoutube,
@@ -55,11 +54,7 @@ export const Footer = () => {
           size={24}
           url={"https://www.facebook.com/LETSMEDYA"}
         />
-        <FooterIcon
-          logo={FaTwitter}
-          size={24}
-          url={"https://twitter.com/letsmedya"}
-        />
+        <FooterIcon size={24} url={"https://twitter.com/letsmedya"} />
         <FooterIcon logo={FaYoutube} size={24} url={"https://youtube.com/"} />
       </div>
     </section>

@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useFetcher } from "react-router-dom";
 
 import logo from "../../assets/image/logo.jpg";
 import NavbarNavigationButton from "./NavbarNavigationButton";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export const Navbar = () => {
   const [hoveredButton, setHoveredButton] = useState<number>(-1);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,7 +33,7 @@ export const Navbar = () => {
       <Link className="navbar-logo-button" to={"/"}>
         <img className="navbar-logo" src={logo} alt="" />
       </Link>
-      <div className="navbar-navigation">
+      <div className={`navbar-navigation ${isOpen ? "active" : ""}`}>
         <NavbarNavigationButton
           index={0}
           title={"Ana Sayfa"}
@@ -68,6 +70,14 @@ export const Navbar = () => {
           destination={"contactus"}
         />
       </div>
+      <button
+        className="menu"
+        onClick={() => {
+          setIsOpen(!isOpen);
+        }}
+      >
+        {isOpen ? <FaTimes size={25} /> : <FaBars size={25} />}
+      </button>
     </div>
   );
 };
