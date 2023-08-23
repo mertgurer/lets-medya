@@ -6,15 +6,18 @@
   background-color: rgb(255, 255, 255);
   overflow: hidden;
   z-index: -1;
+  width: 100vw;
 }
 
 .home-image-box {
   position: fixed;
   width: 50vw;
   height: auto;
-  margin-left: 5%;
+  margin-top: 3%;
+  margin-left: 1%;
   z-index: 0;
   transform: translateZ(0);
+  scale: 1;
 }
 
 .home-image {
@@ -33,15 +36,14 @@
 .home-text-box {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.75);
   /* border: 3px solid var(--secondaryColor); */
-  margin-right: 10%;
+  margin-right: 8%;
   text-align: right;
   height: auto;
   width: auto;
+  z-index: 1;
   border-radius: 10px;
   padding: 50px;
-  backdrop-filter: blur(10px);
 }
 
 .home-text-header {

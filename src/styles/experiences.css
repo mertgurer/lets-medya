@@ -5,8 +5,9 @@
   justify-content: center;
   padding: 100px;
   gap: 10px;
+  width: 100vw;
   position: relative;
-  background-color: rgb(226, 229, 218);
+  background-color: var(--thirdColor);
   border-top: 1px solid black;
 }
 

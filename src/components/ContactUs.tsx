@@ -58,8 +58,8 @@ export const ContactUs = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_8f8d38r",
-          "template_86s8q3e",
+          "service_qu18p79",
+          "template_w605134",
           form.current,
           "JzUNGp4EWrniAzZkq"
         )
@@ -111,7 +111,7 @@ export const ContactUs = () => {
           <input
             type="text"
             name="user_company"
-            placeholder="Şirket (Opsiyonel)"
+            placeholder="Firma (Opsiyonel)"
             className="contactus-input-field"
           />
           <textarea

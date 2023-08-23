@@ -25,7 +25,7 @@ export const NavbarNavigationButton = (props: props) => {
           const bodyRect = document.body.getBoundingClientRect();
           const targetPosition = targetOffset - bodyRect.top;
           window.scroll({
-            top: targetPosition - 100,
+            top: targetPosition - 90,
             behavior: "smooth",
           });
         }

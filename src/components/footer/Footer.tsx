@@ -20,7 +20,7 @@ export const Footer = () => {
           </div>
           <p className="footer-text">
             İçerenköy Mah. Prof. Dr. Ali Nihat Tarlan cad. Süleyman Başkan İş
-            Merkezi No:84 Kat:8 Ataşehir – İstanbul
+            Merkezi No:84 Kat:8 <br /> Ataşehir – İstanbul
           </p>
         </div>
         <div className="footer-box-big">
