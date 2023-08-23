@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/navbar.css";
-import { Link, useFetcher } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from "../../assets/image/logo.jpg";
 import NavbarNavigationButton from "./NavbarNavigationButton";
