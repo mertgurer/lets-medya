@@ -118,7 +118,7 @@ export const ContactUs = () => {
             name="user_message"
             className="contactus-input-field"
             placeholder="Mesaj"
-            style={{ resize: "none", height: "10em" }}
+            style={{ resize: "none", height: "6em" }}
           />
           <input
             type="submit"

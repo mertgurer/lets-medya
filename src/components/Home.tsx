@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/home.css";
 
-import home from "../assets/image/home.jpg";
-
 export const Home = () => {
   useEffect(() => {
     const parallaxItem = document.querySelector(
@@ -26,7 +24,11 @@ export const Home = () => {
   return (
     <section className="home-container" id="home">
       <div className="home-image-box">
-        <img className="home-image" src={home} alt="" />
+        <img
+          className="home-image"
+          src={process.env.PUBLIC_URL + "home.jpg"}
+          alt=""
+        />
       </div>
       <div className="home-text-zone">
         <div className="home-text-box">

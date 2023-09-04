@@ -7,8 +7,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
-  padding: 20px 150px 10px 100px;
+  height: 84px;
+  padding: 15px 100px 10px 100px;
   z-index: 99;
   background-color: rgb(255, 255, 255);
 
@@ -21,7 +21,7 @@
 }
 
 .navbar-logo-button {
-  height: 50px;
+  height: 40px;
   width: auto;
   background-color: transparent;
   border: none;
@@ -42,7 +42,7 @@
 .navbar-navigation-button {
   background-color: transparent;
   border: none;
-  font-size: 18px;
+  font-size: 17px;
   cursor: pointer;
   color: var(--secondaryColor);
 
@@ -50,7 +50,7 @@
 }
 
 .navbar-navigation-button:hover {
-  scale: 1.05;
+  scale: 1.04;
   color: var(--primaryColor);
 }
 

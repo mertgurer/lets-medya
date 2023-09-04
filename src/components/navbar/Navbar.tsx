@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../../styles/navbar.css";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/image/logo.jpg";
 import NavbarNavigationButton from "./NavbarNavigationButton";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -30,9 +29,16 @@ export const Navbar = () => {
 
   return (
     <div className={`navbar-container ${isScrolled ? "scrolled" : ""}`}>
-      <Link className="navbar-logo-button" to={"/"}>
-        <img className="navbar-logo" src={logo} alt="" />
-      </Link>
+      <div
+        className="navbar-logo-button"
+        onClick={() => window.location.reload()}
+      >
+        <img
+          className="navbar-logo"
+          src={process.env.PUBLIC_URL + "logo.jpg"}
+          alt=""
+        />
+      </div>
       <div className={`navbar-navigation ${isOpen ? "active" : ""}`}>
         <NavbarNavigationButton
           index={0}
