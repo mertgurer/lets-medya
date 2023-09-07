@@ -1,20 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../../styles/navbar.css";
-import { Link } from "react-router-dom";
 
 import NavbarNavigationButton from "./NavbarNavigationButton";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { DataContext } from "../../App";
 
 export const Navbar = () => {
+  const { isMobile } = useContext(DataContext);
   const [hoveredButton, setHoveredButton] = useState<number>(-1);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      const triggervalue = isMobile ? 10 : 100;
+
+      if (window.scrollY > triggervalue) {
         setIsScrolled(true);
-      } else if (window.scrollY <= 100) {
+      } else if (window.scrollY <= triggervalue) {
         setIsScrolled(false);
       }
     };
@@ -25,7 +28,7 @@ export const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isMobile]);
 
   return (
     <div className={`navbar-container ${isScrolled ? "scrolled" : ""}`}>

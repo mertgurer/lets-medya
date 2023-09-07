@@ -51,7 +51,7 @@
   justify-content: center;
   margin: 0 3px;
   width: 44px;
-  height: 44px;
+  aspect-ratio: 1;
   padding-left: -100px;
   background-color: white;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -77,4 +77,40 @@
 
 .social-link-alternate-image:hover {
   fill: var(--primaryColor);
+}
+
+@media only screen and (max-width: 1023px) {
+  .footer-container {
+    padding: 10px 15px;
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .footer-left {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .footer-box-big {
+    flex: 0;
+  }
+
+  .footer-box {
+    gap: 5px;
+  }
+
+  .footer-right {
+    width: 75%;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
+  .footer-text {
+    font-size: 11px;
+  }
+
+  .social-link-button {
+    width: 40px;
+  }
 }

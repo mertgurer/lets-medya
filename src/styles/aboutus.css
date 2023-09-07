@@ -44,3 +44,13 @@
 .aboutus-box.mission {
   border-bottom: 1px solid black;
 }
+
+@media only screen and (max-width: 1023px) {
+  .aboutus-box {
+    padding: 20px 40px;
+  }
+
+  .aboutus-aboutus-text-box {
+    width: 100%;
+  }
+}

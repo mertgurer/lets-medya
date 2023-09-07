@@ -35,7 +35,7 @@ export const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="aboutus-box vision">
+      <div className="aboutus-box">
         <p className="aboutus-header">Vizyonumuz</p>
         <div className="aboutus-seperator" />
         <div className="aboutus-aboutus-text-box">

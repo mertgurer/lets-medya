@@ -4,6 +4,8 @@ interface props {
   header: string;
   body: string;
   image: string;
+  index: number;
+  currentIndex: number;
 }
 
 export const ServiceBox = (props: props) => {
@@ -20,7 +22,15 @@ export const ServiceBox = (props: props) => {
   return (
     <div
       id={props.header}
-      className="services-grid-item"
+      className={`services-grid-item ${
+        props.currentIndex === props.index
+          ? "active"
+          : props.currentIndex + 1 === props.index
+          ? "next"
+          : props.currentIndex - 1 === props.index
+          ? "prev"
+          : ""
+      }`}
       style={{
         transform: `${hover ? "scale(1.1)" : ""}`,
         zIndex: `${hover ? "5" : ""}`,

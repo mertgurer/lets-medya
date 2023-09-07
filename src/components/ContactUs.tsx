@@ -1,11 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useContext } from "react";
 import "../styles/contactus.css";
 
 import emailjs from "@emailjs/browser";
 
 import contact from "../assets/image/iletisim.jpg";
+import { DataContext } from "../App";
 
 export const ContactUs = () => {
+  const { isMobile } = useContext(DataContext);
   const form = useRef<HTMLFormElement>(null);
   const [buttonText, setButtonText] = useState("Gönder");
 
@@ -92,9 +94,11 @@ export const ContactUs = () => {
       <p className="aboutus-header">Aklınızda Soru Mu Var?</p>
       <div className="aboutus-seperator" />
       <div className="contactus-mail">
-        <div className="contactus-image-box">
-          <img src={contact} alt="" className="contactus-image" />
-        </div>
+        {!isMobile && (
+          <div className="contactus-image-box">
+            <img src={contact} alt="" className="contactus-image" />
+          </div>
+        )}
         <form ref={form} onSubmit={handleSend} className="contactus-form">
           <input
             type="text"
