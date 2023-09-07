@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "../../App";
 
 interface props {
   index: number;
@@ -6,9 +7,12 @@ interface props {
   hoverIndex: number;
   setHoverIndex: (index: number) => void;
   destination: string;
+  setIsOpen: (value: boolean) => void;
 }
 
 export const NavbarNavigationButton = (props: props) => {
+  const { isMobile } = useContext(DataContext);
+
   return (
     <button
       className={`navbar-navigation-button ${
@@ -25,9 +29,11 @@ export const NavbarNavigationButton = (props: props) => {
           const bodyRect = document.body.getBoundingClientRect();
           const targetPosition = targetOffset - bodyRect.top;
           window.scroll({
-            top: targetPosition - 84,
+            top: targetPosition - (isMobile ? 70 : 84),
             behavior: "smooth",
           });
+
+          if (isMobile) props.setIsOpen(false);
         }
       }}
     >

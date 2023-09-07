@@ -49,6 +49,7 @@ export const Navbar = () => {
           hoverIndex={hoveredButton}
           setHoverIndex={setHoveredButton}
           destination={"home"}
+          setIsOpen={setIsOpen}
         />
         <NavbarNavigationButton
           index={1}
@@ -56,6 +57,7 @@ export const Navbar = () => {
           hoverIndex={hoveredButton}
           setHoverIndex={setHoveredButton}
           destination={"aboutus"}
+          setIsOpen={setIsOpen}
         />
         <NavbarNavigationButton
           index={2}
@@ -63,6 +65,7 @@ export const Navbar = () => {
           hoverIndex={hoveredButton}
           setHoverIndex={setHoveredButton}
           destination={"services"}
+          setIsOpen={setIsOpen}
         />
         <NavbarNavigationButton
           index={3}
@@ -70,6 +73,7 @@ export const Navbar = () => {
           hoverIndex={hoveredButton}
           setHoverIndex={setHoveredButton}
           destination={"experiences"}
+          setIsOpen={setIsOpen}
         />
         <NavbarNavigationButton
           index={4}
@@ -77,6 +81,7 @@ export const Navbar = () => {
           hoverIndex={hoveredButton}
           setHoverIndex={setHoveredButton}
           destination={"contactus"}
+          setIsOpen={setIsOpen}
         />
       </div>
       <button

@@ -74,6 +74,31 @@
     padding: 40px;
   }
 
+  .service-grid-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .service-grid-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    aspect-ratio: 1;
+  }
+
+  .service-grid-button.prev {
+    left: 10px;
+  }
+
+  .service-grid-button.next {
+    right: 10px;
+  }
+
   .services-grid {
     display: flex;
     flex-wrap: nowrap;
@@ -82,15 +107,14 @@
     padding: 20px 17vw;
     justify-content: flex-start;
     margin-top: 10px;
+    position: relative;
   }
 
   .services-grid-item {
     display: none;
     padding: 30px 10px;
     width: 66vw;
-    background-color: white;
-
-    transition: all 400ms ease;
+    height: 420px;
   }
 
   .services-grid-item.active {
@@ -104,10 +128,10 @@
   }
 
   .services-grid-item.next {
-    transform: translateX(100%);
+    transform: translateX(200%);
   }
 
   .services-grid-item.prev {
-    transform: translateX(-100%);
+    transform: translateX(-250%);
   }
 }

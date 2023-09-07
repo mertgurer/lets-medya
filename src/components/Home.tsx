@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../styles/home.css";
 import { DataContext } from "../App";
 
 export const Home = () => {
   const { isMobile } = useContext(DataContext);
+  const [hide, setHide] = useState(false);
 
   /*useEffect(() => {
     const parallaxItem = document.querySelector(
@@ -22,15 +23,34 @@ export const Home = () => {
     };
   }, []); */
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1000) {
+        setHide(true);
+      } else if (window.scrollY <= 1000) {
+        setHide(false);
+      }
+    };
+
+    /* === event listeners added  and removed === */
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMobile]);
+
   return (
     <section className="home-container" id="home">
-      <div className="home-image-box">
-        <img
-          className="home-image"
-          src={process.env.PUBLIC_URL + "home.jpg"}
-          alt=""
-        />
-      </div>
+      {!hide && (
+        <div className="home-image-box">
+          <img
+            className="home-image"
+            src={process.env.PUBLIC_URL + "home.jpg"}
+            alt=""
+          />
+        </div>
+      )}
       <div className="home-text-zone">
         <div className="home-text-box">
           {isMobile ? (
