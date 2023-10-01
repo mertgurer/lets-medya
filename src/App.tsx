@@ -77,15 +77,7 @@ function App() {
             }, 2000);
           }}
         />
-        <ImagePreloader
-          imageUrl={home}
-          onImageLoad={() => {
-            setLoadingIcon(true);
-            setTimeout(() => {
-              setIsReady(true);
-            }, 2000);
-          }}
-        />
+        <ImagePreloader imageUrl={home} onImageLoad={() => {}} />
       </Router>
     </DataContext.Provider>
   );
