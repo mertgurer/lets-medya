@@ -11,6 +11,7 @@ import ContactUs from "./components/ContactUs";
 import Footer from "./components/footer/Footer";
 
 import logo from "./assets/image/logo.jpg";
+import home from "./assets/image/home.jpg";
 
 interface DataContextTemplate {
   isMobile: boolean;
@@ -69,6 +70,15 @@ function App() {
         )}
         <ImagePreloader
           imageUrl={logo}
+          onImageLoad={() => {
+            setLoadingIcon(true);
+            setTimeout(() => {
+              setIsReady(true);
+            }, 2000);
+          }}
+        />
+        <ImagePreloader
+          imageUrl={home}
           onImageLoad={() => {
             setLoadingIcon(true);
             setTimeout(() => {
