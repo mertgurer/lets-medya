@@ -45,12 +45,7 @@ export const Footer = () => {
             </div>
             <p className="footer-text">0216 912 10 88</p>
           </div>
-          <button
-            className="footer-box button"
-            onClick={() => {
-              openMail();
-            }}
-          >
+          <button className="footer-box button" onClick={() => openMail()}>
             <div className="footer-icon-box">
               <MdEmail color="white" size={isMobile ? 14 : 18} />
             </div>
