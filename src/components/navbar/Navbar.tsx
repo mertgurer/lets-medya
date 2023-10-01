@@ -4,6 +4,7 @@ import "../../styles/navbar.css";
 import NavbarNavigationButton from "./NavbarNavigationButton";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { DataContext } from "../../App";
+import logo from "../../assets/image/logo.jpg";
 
 export const Navbar = () => {
   const { isMobile } = useContext(DataContext);
@@ -36,11 +37,7 @@ export const Navbar = () => {
         className="navbar-logo-button"
         onClick={() => window.location.reload()}
       >
-        <img
-          className="navbar-logo"
-          src={process.env.PUBLIC_URL + "logo.jpg"}
-          alt=""
-        />
+        <img className="navbar-logo" src={logo} alt="" />
       </div>
       <div className={`navbar-navigation ${isOpen ? "active" : ""}`}>
         <NavbarNavigationButton

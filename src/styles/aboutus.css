@@ -32,13 +32,13 @@
 .aboutus-aboutus-text-box {
   display: flex;
   flex-direction: column;
-  width: 38%;
+  width: 40%;
   text-align: center;
   gap: 10px;
 }
 
 .aboutus-aboutus-text {
-  font-size: 16px;
+  font-size: 20px;
   color: var(--secondaryColor);
 }
 
@@ -53,5 +53,10 @@
 
   .aboutus-aboutus-text-box {
     width: 100%;
+  }
+
+  .aboutus-aboutus-text {
+    font-size: 18px;
+    color: var(--secondaryColor);
   }
 }

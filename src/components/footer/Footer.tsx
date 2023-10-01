@@ -14,6 +14,18 @@ import { DataContext } from "../../App";
 export const Footer = () => {
   const { isMobile } = useContext(DataContext);
 
+  const openMail = () => {
+    const subject = "";
+    const body = "";
+    const recipient = "info@letsmedya.com";
+
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+  };
+
   return (
     <section className="footer-container">
       <div className="footer-left">
@@ -33,12 +45,17 @@ export const Footer = () => {
             </div>
             <p className="footer-text">0216 912 10 88</p>
           </div>
-          <div className="footer-box">
+          <button
+            className="footer-box button"
+            onClick={() => {
+              openMail();
+            }}
+          >
             <div className="footer-icon-box">
               <MdEmail color="white" size={isMobile ? 14 : 18} />
             </div>
             <p className="footer-text">info@letsmedya.com</p>
-          </div>
+          </button>
         </div>
       </div>
       <div className="footer-right">

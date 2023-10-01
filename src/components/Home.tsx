@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../styles/home.css";
 import { DataContext } from "../App";
+import home from "../assets/image/home.jpg";
 
 export const Home = () => {
   const { isMobile } = useContext(DataContext);
@@ -44,11 +45,7 @@ export const Home = () => {
     <section className="home-container" id="home">
       {!hide && (
         <div className="home-image-box">
-          <img
-            className="home-image"
-            src={process.env.PUBLIC_URL + "home.jpg"}
-            alt=""
-          />
+          <img className="home-image" src={home} alt="" />
         </div>
       )}
       <div className="home-text-zone">
