@@ -40,8 +40,8 @@ export const AboutUs = () => {
         <div className="aboutus-seperator" />
         <div className="aboutus-aboutus-text-box">
           <p className="aboutus-aboutus-text">
-            Markaların Medya Planlama ve Satınalma sektöründe tercih edeceği bir
-            ajans olmayı hedefliyoruz.
+            Markaların Medya Planlama ve Satın alma sektöründe tercih edeceği
+            bir ajans olmayı hedefliyoruz.
           </p>
         </div>
       </div>
