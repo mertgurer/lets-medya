@@ -12,7 +12,7 @@ export const Experiences = () => {
 
     return (
         <section className="experience-container" id="experiences">
-            <p className="aboutus-header">Sektör Tecrübelerimiz</p>
+            <p className="aboutus-header">Referanslar</p>
             <div className="aboutus-seperator" />
             <div className="experience-grid-container">
                 {/* {isMobile && (
