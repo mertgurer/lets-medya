@@ -36,8 +36,8 @@ export const Footer = () => {
                         />
                     </div>
                     <p className="footer-text">
-                        <p>Sahrayıcedit Mah. Mengi Sok. No: 26</p>
-                        <p>Kat: 2 Ofis No: 828 Kadıköy/İstanbul</p>
+                        <p>Sahrayıcedit Mah. Mengi Sok. Fyi Plaza</p>
+                        <p>No: 26, Kat: 2, Ofis No: 828 Kadıköy/İstanbul</p>
                     </p>
                 </div>
                 <div className="footer-box-big">
